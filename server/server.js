@@ -51,19 +51,19 @@ app.get('/todos/:id',(req,res)=>{
       //success
       //error
          //400 -send empty body back
-//     Todo.findById(id).then((r)=>{
-//         if(!r){
-//             return res.status(404).send();
-//         }
-//         res.send({
-//             r
-//         });
-//         console.log(r)
-//     },(e)=>{
-//        res.states(400).send();
-//
-//     })
-// });
+    Todo.findById(id).then((r)=>{
+        if(!r){
+            return res.status(404).send();
+        }
+        res.send({
+            r
+        });
+        console.log(r)
+    },(e)=>{
+       res.states(400).send();
+
+    })
+});
 
 app.listen(3000, ()=>{
     console.log('start 3000!!!')
