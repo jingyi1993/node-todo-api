@@ -60,7 +60,7 @@ app.get('/todos/:id',(req,res)=>{
         });
         console.log(r)
     },(e)=>{
-       res.states(400).send();
+       res.states(404).send();
 
     })
 });
