@@ -21,9 +21,19 @@ app.post('/todos',(req, res)=>{
 console.log('done',JSON.stringify(r, undefined, 2));
         res.send(r);
     },(e)=>{
-        res.send(e);
+        res.status(400).send(e);
     })
-})
+});
+
+
+app.get('/todos',(req, res)=>{
+    Todo.find().then((r)=>{
+        console.log(r);
+        res.send({r});
+    },(e)=>{
+        res.status(400).send(e)
+    })
+});
 
 app.listen(3000, ()=>{
     console.log('start 3000!!!')
