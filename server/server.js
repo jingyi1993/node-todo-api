@@ -6,7 +6,8 @@ var {mongoose} =require('./db/mogoose');
 
 var {Todo} =require('./models/Todo');
 
-var {User} =require('./models/User');
+var {Users} =require('./models/User');
+const _ =require('lodash');
 
 
 var app = express();
@@ -81,6 +82,60 @@ app.delete('/todos/:id',(req,res)=>{
    },(e)=>{
        res.send(e);
    })
+});
+
+app.patch('/todos/:id',(req, res)=>{
+    var id =req.params.id;
+    var body = _.pick(req.body,['text','completed']);
+
+
+    if(!ObjectID.isValid(id)){
+        return res.state(404).send();
+    }
+
+    // {
+    //     "r": {
+    //     "completed": false,
+    //      "text": "hihihi",
+    //
+    // }
+    // }
+
+    // if(_.isBoolean(body.completed) && body.completed ){
+    //     //
+    //     body.completedAt = new Date().getTime();
+    // }else{
+    //     //
+    //     body.completed = false;
+    //     body.completedAt = null;
+    // }
+
+
+    Todo.findByIdAndUpdate(id, {$set: body}).then((r)=>{
+        if(!r){
+            return res.status(404).send()
+        }
+        res.send({r})
+
+    }).catch((e)=>{
+        res.status(400).send()
+    })
+
+
+});
+
+app.post('/hah', (req,res)=>{
+    var body = _.pick(req.body, ['email', 'password']);
+//{email:..., password:...}
+    var user =new Users(body);
+
+    user.save().then((user)=>{
+        res.send(user);
+    }).catch(
+        (e)=>{
+            res.status(400).send();
+        }
+    )
 });
 
 app.listen(3000, ()=>{
