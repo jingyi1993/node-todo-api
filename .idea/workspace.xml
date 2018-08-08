@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd8571fe-da19-490d-9250-62db14d75aab" name="Default" comment="" />
+    <list default="true" id="dd8571fe-da19-490d-9250-62db14d75aab" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/playground/mongoose-delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,7 +21,7 @@
       <file leaf-file-name="mongodb-connect.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playground/mongodb-connect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-302">
+            <state relative-caret-position="384">
               <caret line="16" column="55" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="55" />
             </state>
           </provider>
@@ -35,8 +39,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="65" column="3" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+            <state relative-caret-position="93">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
@@ -44,8 +48,17 @@
       <file leaf-file-name="mongose-queries.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playground/mongose-queries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state>
+              <caret selection-end-line="3" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongoose-delete.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playground/mongoose-delete.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -121,6 +134,7 @@
         <option value="$PROJECT_DIR$/server/models/Todo.js" />
         <option value="$PROJECT_DIR$/server/models/User.js" />
         <option value="$PROJECT_DIR$/playground/mongose-queries.js" />
+        <option value="$PROJECT_DIR$/playground/mongoose-delete.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
       </list>
     </option>
@@ -150,30 +164,18 @@
         <subPane>
           <expand>
             <path>
-              <item name="node-todo-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node-todo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="node-todo-api-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-todo-api-1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="node-todo-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node-todo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="node-todo-api-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-todo-api-1" type="462c0819:PsiDirectoryNode" />
               <item name="playground" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="node-todo-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node-todo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="node-todo-api-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-todo-api-1" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="node-todo-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node-todo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="node-todo-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node-todo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,11 +220,12 @@
       <workItem from="1533147209427" duration="1659000" />
       <workItem from="1533309930174" duration="8753000" />
       <workItem from="1533651130933" duration="13838000" />
+      <workItem from="1533673098299" duration="2086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24250000" />
+    <option name="totallyTimeSpent" value="26336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -234,7 +237,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49960285" visible="true" weight="0.6275862" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49960285" visible="true" weight="0.6758621" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -253,6 +256,62 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/playground/mongodb-connect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground/mongodb-find.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="35" column="56" selection-start-line="35" selection-start-column="56" selection-end-line="35" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground/mongose-queries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/db/mogoose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/Todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="65" column="3" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/playground/mongodb-connect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -288,12 +347,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/serever.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/playground/mongodb-connect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
+        <state relative-caret-position="384">
           <caret line="16" column="55" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="55" />
         </state>
       </provider>
@@ -335,15 +391,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/playground/mongose-queries.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state>
+          <caret selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground/mongoose-delete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="65" column="3" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+        <state relative-caret-position="93">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
