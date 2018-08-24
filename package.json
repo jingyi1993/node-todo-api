@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "lodash": "^4.17.10",
     "mongodb": "^2.2.33",
-    "mongoose": "^5.2.7",
+    "mongoose": "^4.5.9",
     "require": "^2.4.20",
     "validator": "^10.5.0"
   },
@@ -21,6 +22,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jingyi1993/node-todo-api.git"
+  },
+  "engines": {
+    "node":"8.11.3"
   },
   "author": "",
   "license": "ISC",

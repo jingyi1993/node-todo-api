@@ -33,7 +33,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',
         //         console.log('Unable!!!')
         //     });
 
-        db.collection('Users').findOneAndDelete({hi:'eat'})
+        db.collection('Todos').findOneAndDelete({text:'sth to do'})
             .then((result)=>{
                 console.log(JSON.stringify(result, undefined, 2))
             });

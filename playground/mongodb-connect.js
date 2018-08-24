@@ -22,16 +22,16 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',
     }
     console.log('connect to Mongodb');
 
-    // db.collection('Todos').insertOne({
-    //     text:'sth to do'
-    // },(e,result)=>{
-    //     if(e){
-    //         return console.log('unable to connect',e);
-    //     }
-    //
-    //     console.log(JSON.stringify(result.ops, undefined, 2))
-    //
-    // });
+    db.collection('Todos').insertOne({
+        text:'sth to do'
+    },(e,result)=>{
+        if(e){
+            return console.log('unable to connect',e);
+        }
+
+        console.log(JSON.stringify(result.ops, undefined, 2))
+
+    });
     //     db.collection('Users').insertOne({
     //         id:'123',
     //         name:'Jingyi',
